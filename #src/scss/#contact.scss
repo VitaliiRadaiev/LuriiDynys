@@ -1,0 +1,17 @@
+.contact {
+	&__header {}
+
+	&__author {}
+
+	&__email-form {
+		padding: 225px 0 200px;
+
+		@media (max-width: $md3+px) {
+			padding: 70px 0 70px;
+		}
+	}
+	&__sign-up {
+
+	}
+}
+

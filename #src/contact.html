@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Lurii Dynys</title>
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+		<div class="wrapper contact">
+			@@include('_sidePanel.html')
+			<header class="contact__header">
+				<div class="top-head top-head_bg-blue">
+					<h1 class="title-1">Contact</h1>
+				</div>
+			</header>
+			<main class="main">
+				<section class="contact__author author-block author-block_v2">
+					<div class="author-block__column author-block__column_1">
+						<div class="author-block__img">
+							<a href="#">
+								<img src="img/man/man.png" alt="photo">
+							</a>
+						</div>
+					</div>
+					<div class="author-block__column author-block__column_2">
+						<div class="author-block__inner text-center">
+							<h4 class="author-block__title title-4 text-white">Follow me on</h4>
+							<div class="author-block__icon">
+								<a href="#">
+									<img src="img/icons/facebook-colour.svg" alt="icon">
+								</a>
+							</div>
+							<div class="author-block__icon">
+								<a href="#">
+									<img src="img/icons/twitter-colour.svg" alt="icon">
+								</a>
+							</div>
+							<div class="author-block__logo">
+								<a href="#">
+									<img src="img/logo/amazon.svg" alt="logo">
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<section class="contact__email-form gray-background">
+					<div class="container">
+						<form action="" class="form-send-email">
+							<h4 class="form-send-email__title title-4">E-mail me!</h4>
+							<div class="form-send-email__item">
+								<label for="name" class="label">Name</label>
+								<input class="input" id="name" type="text" required>
+							</div>
+							<div class="form-send-email__item">
+								<label for="email" class="label">E-mail</label>
+								<input class="input" id="email" type="email" required>
+							</div>
+							<div class="form-send-email__item">
+								<textarea class="textarea" placeholder="Wright your message…."></textarea>
+							</div>
+							<div class="form-send-email__submit-wrap">
+								<button class="btn-default">
+									<span>
+										<img src="img/icons/mail.png" alt="icon">
+									</span>
+									E-MAIL IURII!
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="contact__sign-up">
+					<div class="container">
+						<form action="/" class="sign-up-form">
+							<div class="sign-up-form__head">
+								<div class="sign-up-form__head-img">
+									<img src="img/mini-photo/book-1.png" alt="img">
+								</div>
+								<div class="sign-up-form__head-text">
+									Sign up for monthly newsletter 
+									and get free story  of Spacy Bunch 
+									«Phantoms of Callisto!»
+								</div>
+							</div>
+							<div class="sign-up-form__item">
+								<label for="name" class="label">Name</label>
+								<input class="input" id="name" type="text" required>
+							</div>
+							<div class="sign-up-form__item">
+								<label for="email" class="label">E-mail</label>
+								<input class="input" id="email" type="email" required>
+							</div>
+							<div class="sign-up-form__submit-wrap">
+								<button class="btn-default">
+									<span>
+										<img src="img/icons/aircraft.png" alt="icon">
+									</span>
+									YES! SIGN UP ME!
+								</button>
+							</div>
+							<div class="sign-up-form__item">
+								<input class="check-input" id="check" type="checkbox" checked>
+								<label for="check">Yes! Sign up me!” you agree with this site Privacy Policy</label>
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html')
+		</div>
+		@@include('_scripts.html')
+	</body>
+</html>

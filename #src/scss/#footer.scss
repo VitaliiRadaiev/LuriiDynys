@@ -1,0 +1,26 @@
+.footer {
+	min-height: 262px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	&__social {
+		margin-bottom: 12px;
+	}
+
+	& p {
+		font-size: 12px;
+		letter-spacing: -0.16px;
+		margin-bottom: 6px;
+
+		& > a {
+			color: #000;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
