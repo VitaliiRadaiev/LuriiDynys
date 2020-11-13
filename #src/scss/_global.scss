@@ -464,6 +464,20 @@ textarea {
 
 			@media (max-width: $md3+px) {
 				margin-top: 40px;
+
+				& .author-block__title {
+					margin-bottom: 15px;
+				}
+
+				& .author-block__icon {
+					width: 52px;
+					height: 52px;
+					margin: 0 auto 20px;
+				}
+
+				& .author-block__logo {
+					max-width: 112px;
+				}
 			}
 		}
 	}

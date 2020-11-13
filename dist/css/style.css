@@ -2638,7 +2638,16 @@ textarea.input {
 }
 
 .home__blog {
-  margin: 90px 0 0px;
+  padding: 90px 0 0px;
+  background: #fff;
+}
+
+.home__sign-up {
+  background: #fff;
+}
+
+.home .footer {
+  background: #fff;
 }
 
 .header-home {
@@ -2658,7 +2667,7 @@ textarea.input {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header-home__body {
@@ -2676,6 +2685,8 @@ textarea.input {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header-home__content {
@@ -2718,7 +2729,7 @@ textarea.input {
 }
 
 .home-slider__bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -3094,6 +3105,10 @@ textarea.input {
 .books__header .container {
   position: relative;
   z-index: 2;
+}
+
+.books__header .title-1 {
+  margin: 0 auto;
 }
 
 .books__preview {
@@ -4215,6 +4230,20 @@ textarea.input {
     margin-top: 40px;
   }
 
+  .author-block_v2 .author-block__inner .author-block__title {
+    margin-bottom: 15px;
+  }
+
+  .author-block_v2 .author-block__inner .author-block__icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 20px;
+  }
+
+  .author-block_v2 .author-block__inner .author-block__logo {
+    max-width: 112px;
+  }
+
   .author-block__column_1 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -4362,6 +4391,10 @@ textarea.input {
     font-size: 7px;
   }
 
+  .books__header .title-1 {
+    max-width: 450px;
+  }
+
   .book-fragment__action {
     margin: 50px 0 70px;
   }
@@ -4505,6 +4538,10 @@ textarea.input {
 
   .slider__btn-wrap > a {
     font-size: 8px;
+  }
+
+  .books__header .title-1 {
+    max-width: 350px;
   }
 
   .action-block__btn-wrap .btn-default {

@@ -35,7 +35,14 @@
 		}
 
 		& .title-1 {
+			margin: 0 auto;
+			@media (max-width: $md3+px) {
+				max-width: 450px;
+			}
 
+			@media (max-width: $md4+px) {
+				max-width: 350px;
+			}
 		}
 
 	}
