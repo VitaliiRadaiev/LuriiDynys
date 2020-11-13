@@ -16,6 +16,12 @@
 	&__blog {
 		padding: 90px 0 0px;
 		background: #fff;
+
+		&.blog-block {
+			& .container-big {
+				max-width: none;
+			}
+		}
 	}
 
 	&__sign-up {
