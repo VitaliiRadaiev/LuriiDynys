@@ -2034,6 +2034,35 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.slick-slider {
+  position: relative;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-slider .slick-list {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slick-slider .slick-track {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-slider .slick-slide {
+  position: relative;
+}
+
 .burger-wrap {
   margin-left: 25px;
   display: inline-block;
@@ -3274,6 +3303,8 @@ textarea.input {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   max-width: 1023px;
+  position: relative;
+  min-width: 0;
 }
 
 .header-book-fragment__column-right {
@@ -3315,6 +3346,7 @@ textarea.input {
   font-weight: 300;
   letter-spacing: -0.16px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .header-book-fragment__link > span {
@@ -3335,6 +3367,31 @@ textarea.input {
   width: 100%;
 }
 
+.header-book-fragment__slider-top {
+  min-width: 0;
+}
+
+.header-book-fragment__slider-bottom {
+  min-width: 0;
+}
+
+.header-book-fragment__slider-bottom:before {
+  position: absolute;
+  content: '';
+  top: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100vw;
+}
+
+.header-book-fragment__slider-bottom .slick-slide {
+  height: 100%;
+}
+
 .header-book-fragment__bottom {
   position: relative;
   padding-top: 29px;
@@ -3344,19 +3401,6 @@ textarea.input {
 
 .header-book-fragment__bottom * {
   color: #fff;
-}
-
-.header-book-fragment__bottom:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 1px;
-  background: rgba(255, 255, 255, 0.4);
-  width: 100vw;
 }
 
 .header-book-fragment__bottom > p {
@@ -3386,6 +3430,7 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .header-book-fragment__btn-slide-down > span {

@@ -88,6 +88,8 @@
 	&__column-center {
 		flex: 1 1 auto;
 		max-width: 1023px;
+		position: relative;
+		min-width: 0;
 	}
 	&__column-right {
 		flex: 0 0 145px;
@@ -133,6 +135,7 @@
 		font-weight: 300;
 		letter-spacing: -0.16px;
 		white-space: nowrap;
+		cursor: pointer;
 
 		@media (max-width: $md2+px) {
 			font-size: 0;
@@ -159,6 +162,28 @@
 		padding-bottom: 70.5%;
 		width: 100%;
 	}
+
+	&__slider-top {
+		min-width: 0;
+	}
+
+	&__slider-bottom {
+		min-width: 0;
+		&:before {
+			position: absolute;
+			content: '';
+			top: -2px;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 1px;
+			background: rgba(#fff, 0.4);
+			width: 100vw;
+		}
+		& .slick-slide {
+			height: 100%;
+		}
+	}
+
 	&__bottom {
 		position: relative;
 		padding-top: 29px;
@@ -180,17 +205,6 @@
 			color: #fff;
 		}
 
-		&:before {
-			position: absolute;
-			content: '';
-			top: 0;
-			left: 50%;
-			transform: translateX(-50%);
-			height: 1px;
-			background: rgba(#fff, 0.4);
-			width: 100vw;
-		}
-
 			& > p {
 				max-width: 398px;
 			}
@@ -210,6 +224,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		z-index: 10;
 
 		@media (min-width: 992px) {
 			&:hover {

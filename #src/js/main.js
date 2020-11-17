@@ -113,6 +113,7 @@ window.onload = function() {
 	@@include('#mobile-products-slider.js');
 	@@include('#comments-handler.js');
 	@@include('#mobile-recent-posts-slider.js');
+	@@include('#book-fragment-slider.js');
 
 
 };
