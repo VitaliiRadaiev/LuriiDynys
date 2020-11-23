@@ -18,4 +18,4 @@ $('.header-book-fragment__slider-bottom').slick({
   slidesToScroll: 1,
   asNavFor: '.header-book-fragment__slider-top',
   arrows: false,
-}); nextElementSibling
+});
