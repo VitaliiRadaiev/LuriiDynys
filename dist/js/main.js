@@ -133,7 +133,6 @@ window.onload = function() {
 		let swiper = new Swiper(slider, {
 		  slidesPerView: 1,
 		  loop: true,
-		  autoHeight: true,
 		  navigation: {
 		  	nextEl: slider.querySelector('.slider__button-next'),
 		  	prevEl: slider.querySelector('.slider__button-prev'),
@@ -149,8 +148,12 @@ window.onload = function() {
 		function mobileSlider() {
 			if(document.documentElement.clientWidth <= 767 && slider.dataset.mobile == 'false') {
 				mySwiper = new Swiper(slider, {
-					slidesPerView: 'auto',
-					centeredSlides: true,
+					slidesPerView: 1,
+					//centeredSlides: true,
+					pagination: {
+					    el: slider.querySelector('.swiper-pagination'),
+					    clickable: true,
+					  },
 				});
 
 				slider.dataset.mobile = 'true';
@@ -400,9 +403,8 @@ $('.header-book-fragment__slider-bottom').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.header-book-fragment__slider-top',
-  adaptiveHeight: true,
   arrows: false,
-});;
+}); nextElementSibling;
 
 
 };

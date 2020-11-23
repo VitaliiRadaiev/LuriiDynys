@@ -6,8 +6,12 @@
 		function mobileSlider() {
 			if(document.documentElement.clientWidth <= 767 && slider.dataset.mobile == 'false') {
 				mySwiper = new Swiper(slider, {
-					slidesPerView: 'auto',
-					centeredSlides: true,
+					slidesPerView: 1,
+					//centeredSlides: true,
+					pagination: {
+					    el: slider.querySelector('.swiper-pagination'),
+					    clickable: true,
+					  },
 				});
 
 				slider.dataset.mobile = 'true';

@@ -16,12 +16,6 @@
 	&__blog {
 		padding: 90px 0 0px;
 		background: #fff;
-
-		&.blog-block {
-			& .container-big {
-				max-width: none;
-			}
-		}
 	}
 
 	&__sign-up {
@@ -126,14 +120,22 @@
 				background: transparent;
 			}
 		}
+
+		& .swiper-slide {
+			height: auto;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 }
 
 .slider {
+
 	&__item {
 		max-width: 846px;
 		margin: 60px auto 0;
 		display: flex;
+		flex: 1 1 auto;
 
 		@media (max-width: $md3+px) {
 			margin: 20px auto 0;
@@ -276,8 +278,9 @@
 
 .blog-block {
 	& .container-big {
-		max-width: 1440px;
+		max-width: none;
 		padding: 0;
+
 	}
 	&__title {
 		text-align: center;
@@ -306,10 +309,17 @@
 		@media (max-width: $md3+px) {
 			flex: 0 0 auto;
 			width: auto;
+			margin-bottom: 35px;
 
-			& .card-blog {
+/*			& .card-blog {
 				width: 300px;
-			}
+			}*/
+		}
+	}
+
+	& .swiper-pagination {
+		& .swiper-pagination-bullet {
+			margin: 0 18px;
 		}
 	}
 }

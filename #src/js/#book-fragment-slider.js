@@ -17,6 +17,5 @@ $('.header-book-fragment__slider-bottom').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   asNavFor: '.header-book-fragment__slider-top',
-  adaptiveHeight: true,
   arrows: false,
-});
+}); nextElementSibling

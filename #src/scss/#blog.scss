@@ -535,6 +535,12 @@
 			}
 		}
 	}
+
+	& .swiper-pagination {
+		& .swiper-pagination-bullet {
+			margin: 0 18px !important;
+		}
+	}
 }
 
 .post-card {

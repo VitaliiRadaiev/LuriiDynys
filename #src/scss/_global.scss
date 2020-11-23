@@ -584,9 +584,9 @@ textarea {
 		@media (max-width: $md3+px) {
 			margin-top: 40px;
 			padding-left: 0;
-			text-align: center;
 			margin-left: auto;
 			margin-right: auto;
+			width: 85%;
 		}
 	}
 
@@ -797,6 +797,13 @@ textarea {
 // === product-block ===========================================================================
 .products-block {
 
+	@media (max-width: $md3+px) {
+		.container {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+
 	& .swiper-container {
 		max-width: 900px;
 		margin: 0 auto;
@@ -826,6 +833,12 @@ textarea {
 			& .card-blog {
 				width: 300px;
 			}
+		}
+	}
+
+	& .swiper-pagination {
+		& .swiper-pagination-bullet {
+			margin: 0 18px !important;
 		}
 	}
 

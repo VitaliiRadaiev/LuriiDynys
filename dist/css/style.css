@@ -1193,6 +1193,10 @@ textarea {
   height: auto;
 }
 
+.products-block .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 18px !important;
+}
+
 .products-block__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2671,10 +2675,6 @@ textarea.input {
   background: #fff;
 }
 
-.home__blog.blog-block .container-big {
-  max-width: none;
-}
-
 .home__sign-up {
   background: #fff;
 }
@@ -2786,12 +2786,26 @@ textarea.input {
           justify-content: center;
 }
 
+.home-slider__body .swiper-slide {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .slider__item {
   max-width: 846px;
   margin: 60px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .slider__column_1 {
@@ -2925,7 +2939,7 @@ textarea.input {
 }
 
 .blog-block .container-big {
-  max-width: 1440px;
+  max-width: none;
   padding: 0;
 }
 
@@ -2953,6 +2967,10 @@ textarea.input {
   margin-bottom: 80px;
   height: auto;
   padding-bottom: 1px;
+}
+
+.blog-block .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 18px;
 }
 
 .card-blog {
@@ -3947,6 +3965,10 @@ textarea.input {
   height: auto;
 }
 
+.recent-posts .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 18px !important;
+}
+
 .post-card {
   display: block;
   color: #000;
@@ -4316,13 +4338,18 @@ textarea.input {
   .author-block__inner {
     margin-top: 40px;
     padding-left: 0;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    width: 85%;
   }
 
   .sign-up-form {
     padding: 70px 0 40px;
+  }
+
+  .products-block .container {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .products-block .swiper-wrapper {
@@ -4418,10 +4445,10 @@ textarea.input {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     width: auto;
-  }
-
-  .blog-block .swiper-slide .card-blog {
-    width: 300px;
+    margin-bottom: 35px;
+    /*			& .card-blog {
+				width: 300px;
+			}*/
   }
 
   .welcome__text-content {
