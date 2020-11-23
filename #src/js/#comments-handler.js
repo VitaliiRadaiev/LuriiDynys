@@ -93,17 +93,33 @@
 	if(btnLeavComment) {
 		btnLeavComment.addEventListener('click', function() {
 			_slideUp(this);
-			_slideDown(this.previousElementSibling);
+			if(this.previousElementSibling) {
+				_slideDown(this.previousElementSibling);
+			} else {
+				_slideDown(document.getElementById('commentform'));
+			}
 			this.style.opacity = '0';
 		})
 
 		let form = btnLeavComment.previousElementSibling;
-		let btnCancel = form.querySelector('.form-comment__cancel');
-		btnCancel.addEventListener('click', function(e) {
-			e.preventDefault();
-			_slideUp(form);
-			_slideDown(btnLeavComment);
-			btnLeavComment.style.opacity = '1';
-		})
+		if(form) {
+			let btnCancel = form.querySelector('.form-comment__cancel');
+			btnCancel.addEventListener('click', function(e) {
+				e.preventDefault();
+				_slideUp(form);
+				_slideDown(btnLeavComment);
+				btnLeavComment.style.opacity = '1';
+			})
+		} else {
+			let form = document.getElementById('commentform');
+			let btnCancel = form.querySelector('.form-comment__cancel');
+			 btnCancel.addEventListener('click', function(e) {
+				e.preventDefault();
+				_slideUp(form);
+				_slideDown(btnLeavComment);
+				btnLeavComment.style.opacity = '1';
+			})
+		}
 	}
 }
+
